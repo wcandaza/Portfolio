@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300&display=swap');
+html {
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    --navHeight: 3em;
+}
+#navBar {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    font-weight: bold;
+}
+/* #navBar ul {
+    background-color: black;
+} */
+#navBar li:hover {
+    color: #5f7e7e;
+}
+
+a {
+    text-decoration: none;
+}
+ul {
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    background-color: rgb(227, 227, 227);
+    margin: 0;
+    height: var(--navHeight);
+    
+}
+li {
+    align-self: center;
+    margin-left: 1em;
+    margin-right: 1em;
+    color: rgb(138, 104, 104);
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.2em;
+}
+
+/* #imageWinfred {
+    width: em;
+    height: em;
+    position: absolute;
+    top: 4em;
+    left: 50em;
+    border-radius: 4em;
+    animation: name 7s;
+}
+@media only screen and (max-width: 900px){
+    #imageWinfred {
+        display: none;
+    }
+} */
+.nameWinfred {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+    color: rgb(46, 14, 14);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    animation: name 3s;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+.nameWinfred2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+    color: rgb(46, 14, 14);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    animation: name2 3s;
+    /* -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent; */
+}
+@keyframes name {
+    0% {
+        opacity: 0;
+        translate: -.5em;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+@keyframes name2 {
+    0% {
+        opacity: 0;
+        translate: -.5em;
+    }
+    50% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.nameEffects1 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+    color: rgb(46, 14, 14);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 4em;
+    left: 5em;
+    animation: nameEffect 3s;
+    opacity: 0;
+}
+.nameEffects2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 4em;
+    color: rgb(46, 14, 14);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 4em;
+    left: 2em;
+    animation: nameEffect2 3s;
+    opacity: 0;
+}
+
+@keyframes nameEffect {
+    0% {
+        opacity: 0;
+        translate: 5em;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+@keyframes nameEffect2 {
+    0% {
+        opacity: 0;
+        translate: -.5em;
+    }
+    50% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+.learnMore {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    color: rgb(15, 31, 248);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 8.5em;
+    left: 25em;
+    animation: learnMore 4s;
+}
+@keyframes learnMore {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+.learnMore2 {
+    font-family: 'Rubik', sans-serif;
+    font-size: 2em;
+    color: rgb(15, 31, 248);
+    margin: 0;
+    padding: 0;
+    z-index: 2;
+    position: absolute;
+    top: 8.5em;
+    left: 25em;
+    animation: learnMore 4s;
+}
+@keyframes learnMore2 {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    75% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+/* @keyframes name {
+    0% {
+        background-image: linear-gradient(to right, red, orange, yellow,green, blue, indigo, violet);
+    }
+    16% {
+        background-image: linear-gradient(to right, orange, yellow, green, blue, indigo, violet, red);
+    }
+    32% {
+        background-image: linear-gradient(to right, yellow, green, blue, indigo, violet, red, orange);
+    }
+    48% {
+        background-image: linear-gradient(to right, green, blue, indigo, violet, red, orange, yellow);
+    }
+    64% {
+        background-image: linear-gradient(to right, blue, indigo, violet, red, orange, yellow, green);
+    }
+    80% {
+        background-image: linear-gradient(to right, indigo, violet, red, orange, yellow, green, blue);
+    }
+    100% {
+        background-image: linear-gradient(to right, violet, indigo, blue, green,yellow, orange, red);
+    }
+} */
+@media only screen and (max-width: 500px){
+    .nameWinfred {
+        font-size: 3em;
+    }
+    #navBar {
+        font-size: .5em;
+    }
+    .learnMore {
+        display: none;
+    }
+    .learnMore2 {
+        display: none;
+    }
+}
+@media only screen and (max-width: 382px){
+    .nameWinfred {
+        font-size: 2em;
+    }
+    .learnMore {
+        display: none;
+    }
+    .learnMore2 {
+        display: none;
+    }
+}
+
+#aboutMeContainer {
+    /* background-color: rgb(235, 217, 217); */
+    height: calc(100vh - var(--navHeight));
+    display: flex;
+}
+#projectsContainer {
+    /* background-color: rgb(196, 121, 121); */
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+#contactContainer {
+    background-color: rgb(217, 196, 157);
+    height: 100vh;
+    
+}
+
+.projectName {
+    padding: 3em;
+    color: rgb(137, 206, 26);
+    font-size: 1.5em;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+    
+}
+#listOfProjects {
+    display: flex;
+    justify-content: space-around;
+}
+#dice-game {
+    width: 10em;
+}
